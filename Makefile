@@ -4,7 +4,7 @@ INCLUDES = -Iinclude
 
 RAYLIB_FLAGS = $(shell pkg-config --cflags --libs raylib)
 
-ERROR_FLAGS = $(shell -Werror -Wall)
+ERROR_FLAGS = -Werror -Wall
 
 SRC = main.c $(wildcard src/**/*.c)
 
